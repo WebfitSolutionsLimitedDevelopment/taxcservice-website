@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -12,8 +13,6 @@ import {
   Shield, Star, ChevronDown, Menu, X, Check, Send, ArrowRight,
   Globe, Award, ThumbsUp, Navigation
 } from 'lucide-react';
-
-const LOGO_URL = 'https://customer-assets.emergentagent.com/job_46d48f54-81f4-470a-9d05-5334c5e3d33f/artifacts/ktyx0ymu_taxcservice.com.png';
 
 const IMAGES = {
   hero: 'https://images.pexels.com/photos/1467591/pexels-photo-1467591.jpeg',
@@ -116,7 +115,14 @@ function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <a href="#home" className="flex items-center gap-3">
-            <img src={LOGO_URL} alt="TaxcService" className="h-12 w-auto" />
+            <Image
+              src="/logo.png"
+              alt="TaxcService"
+              width={180}
+              height={54}
+              priority
+              className="h-12 w-auto object-contain"
+            />
           </a>
 
           <nav className="hidden md:flex items-center gap-8">
@@ -201,7 +207,7 @@ function HeroSection() {
 
           <p className="text-lg text-white/80 mb-8 max-w-xl leading-relaxed">
             Experience the finest private transport service in Auckland, New Zealand.
-            From airport transfers to luxury tours — travel in comfort, style, and safety.
+            From airport transfers to luxury tours - travel in comfort, style, and safety.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
@@ -393,7 +399,7 @@ function TestimonialsSection() {
             What Our Customers Say
           </h2>
           <p className="text-gray-600 text-lg">
-            Don&apos;t just take our word for it — hear from our satisfied customers.
+            Don&apos;t just take our word for it - hear from our satisfied customers.
           </p>
         </div>
 
@@ -748,7 +754,7 @@ function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-10">
           <div className="md:col-span-2">
-            <img src={LOGO_URL} alt="TaxcService" className="h-14 w-auto mb-4" />
+            <img src="/logo.png" alt="TaxcService" className="h-14 w-auto mb-4" />
             <p className="text-gray-400 max-w-md leading-relaxed">
               Auckland&apos;s premium private transport and chauffeur service. Delivering
               comfort, safety, and reliability for over 15 years.
