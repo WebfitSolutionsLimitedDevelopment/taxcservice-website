@@ -27,7 +27,7 @@ const services = [
   {
     icon: Plane,
     title: 'Auckland Airport Transfers',
-    description: 'Reliable meet-and-greet airport pickup and drop-off services. We track your flight so we\'re always on time, every time.',
+    description: 'Reliable meet-and-greet airport pickup and drop-off services. We track your flight so we are always on time, every time.',
     image: IMAGES.mercedes,
   },
   {
@@ -57,7 +57,7 @@ const services = [
   {
     icon: Globe,
     title: 'NZ Tours & Travel',
-    description: 'Explore the beauty of New Zealand with our guided tour services. From Auckland to Queenstown, we\'ve got you covered.',
+    description: 'Explore the beauty of New Zealand with our guided tour services. From Auckland to Queenstown, we have got you covered.',
     image: IMAGES.aucklandSunset,
   },
 ];
@@ -186,7 +186,7 @@ function HeroSection() {
       <div className="absolute inset-0">
         <img
           src={IMAGES.hero}
-          alt="Luxury chauffeur service"
+          alt="Private chauffeur and airport transfer service in Auckland"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a3d3f]/95 via-[#0d7377]/80 to-transparent" />
@@ -196,49 +196,40 @@ function HeroSection() {
         <div className="max-w-2xl">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
             <Shield className="text-amber-400" size={16} />
-            <span className="text-white/90 text-sm font-medium">Auckland&apos;s Trusted Transport Service</span>
+            <span className="text-white/90 text-sm font-medium">
+              Auckland Private Chauffeur & Airport Transfers
+            </span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-            Premium Chauffeur &
-            <span className="text-amber-400"> Transport Service</span>
+            Private Chauffeur &
+            <span className="text-amber-400"> Airport Transfers</span>
             <br />in Auckland
           </h1>
 
           <p className="text-lg text-white/80 mb-8 max-w-xl leading-relaxed">
-            Experience the finest private transport service in Auckland, New Zealand.
-            From airport transfers to luxury tours - travel in comfort, style, and safety.
+            Operated by a trusted local Auckland team, TaxcService provides personalised chauffeur-driven transport for airport transfers, business travel, events, and private journeys.
+            <br /><br />
+            Sit back and relax while we take care of your journey safely, professionally, and always on time.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="#quote">
               <Button size="lg" className="bg-amber-500 hover:bg-amber-600 text-gray-900 font-semibold rounded-full px-8 py-6 text-base shadow-lg shadow-amber-500/25">
-                Request a Quote <ArrowRight className="ml-2" size={18} />
+                Get a Quote <ArrowRight className="ml-2" size={18} />
               </Button>
             </a>
-            <a href="#services">
+            <a href="tel:+6421891241">
               <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 rounded-full px-8 py-6 text-base bg-transparent">
-                Our Services
+                Call Now
               </Button>
             </a>
           </div>
 
-          <div className="flex items-center gap-6 mt-12">
-            <div className="flex -space-x-2">
-              {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="w-10 h-10 rounded-full bg-white/20 border-2 border-white/40 flex items-center justify-center">
-                  <Star className="text-amber-400" size={14} />
-                </div>
-              ))}
-            </div>
-            <div>
-              <div className="flex items-center gap-1">
-                {[1, 2, 3, 4, 5].map((i) => (
-                  <Star key={i} className="text-amber-400 fill-amber-400" size={14} />
-                ))}
-              </div>
-              <p className="text-white/70 text-sm">Rated 5/5 by 500+ happy customers</p>
-            </div>
+          <div className="mt-10">
+            <p className="text-white/70 text-sm">
+              NZTA Approved • Airport Transfers • Corporate Travel • Trusted Local Service
+            </p>
           </div>
         </div>
       </div>
@@ -329,7 +320,7 @@ function AboutSection() {
     { icon: Shield, title: 'Licensed & Insured', desc: 'Fully licensed and insured for your peace of mind' },
     { icon: Clock, title: '24/7 Availability', desc: 'Round-the-clock service for early flights or late events' },
     { icon: Award, title: 'Professional Chauffeurs', desc: 'Experienced, vetted, and professionally trained drivers' },
-    { icon: ThumbsUp, title: 'Flight Tracking', desc: 'We monitor your flight so we\'re always ready when you land' },
+    { icon: ThumbsUp, title: 'Flight Tracking', desc: 'We monitor your flight so we are always ready when you land' },
     { icon: Car, title: 'Premium Vehicles', desc: 'Well-maintained luxury vehicles for maximum comfort' },
     { icon: Navigation, title: 'Local Expertise', desc: 'Auckland locals who know every route and shortcut' },
   ];
@@ -359,7 +350,7 @@ function AboutSection() {
             </h2>
             <p className="text-gray-600 text-lg mb-8 leading-relaxed">
               With over 15 years of experience, TaxcService has been the go-to transport
-              provider for thousands of satisfied customers. Whether you&apos;re a visitor
+              provider for thousands of satisfied customers. Whether you are a visitor
               arriving at Auckland Airport or a local heading to a special event, we
               deliver exceptional service every single time.
             </p>
@@ -708,18 +699,32 @@ function ContactSection() {
             Contact Us
           </h2>
           <p className="text-gray-600 text-lg">
-            Have questions? Reach out to us anytime.
+            Have questions or need a quick quote? Contact us directly.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           <Card className="border-0 shadow-md text-center">
             <CardContent className="p-8">
               <div className="w-14 h-14 bg-[#0d7377]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Phone className="text-[#0d7377]" size={24} />
               </div>
-              <h4 className="font-semibold text-gray-900 mb-2" style={{ fontFamily: 'Inter, sans-serif' }}>Call Us</h4>
-              <a href="tel:+6421234567" className="text-[#0d7377] hover:underline">+64 21 234 567</a>
+              <h4 className="font-semibold text-gray-900 mb-2">Call (NZ)</h4>
+              <a href="tel:021891241" className="text-[#0d7377] hover:underline font-medium">
+                021 891 241
+              </a>
+            </CardContent>
+          </Card>
+
+          <Card className="border-0 shadow-md text-center">
+            <CardContent className="p-8">
+              <div className="w-14 h-14 bg-[#0d7377]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Phone className="text-[#0d7377]" size={24} />
+              </div>
+              <h4 className="font-semibold text-gray-900 mb-2">Call (International)</h4>
+              <a href="tel:+6421891241" className="text-[#0d7377] hover:underline font-medium">
+                +64 21 891 241
+              </a>
             </CardContent>
           </Card>
 
@@ -728,18 +733,10 @@ function ContactSection() {
               <div className="w-14 h-14 bg-[#0d7377]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Mail className="text-[#0d7377]" size={24} />
               </div>
-              <h4 className="font-semibold text-gray-900 mb-2" style={{ fontFamily: 'Inter, sans-serif' }}>Email Us</h4>
-              <a href="mailto:nzroadtours@gmail.com" className="text-[#0d7377] hover:underline">nzroadtours@gmail.com</a>
-            </CardContent>
-          </Card>
-
-          <Card className="border-0 shadow-md text-center">
-            <CardContent className="p-8">
-              <div className="w-14 h-14 bg-[#0d7377]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <MapPin className="text-[#0d7377]" size={24} />
-              </div>
-              <h4 className="font-semibold text-gray-900 mb-2" style={{ fontFamily: 'Inter, sans-serif' }}>Location</h4>
-              <p className="text-gray-600">Auckland, New Zealand</p>
+              <h4 className="font-semibold text-gray-900 mb-2">Email Us</h4>
+              <a href="mailto:pramensingh@taxcservice.com" className="text-[#0d7377] hover:underline font-medium">
+                pramensingh@taxcservice.com
+              </a>
             </CardContent>
           </Card>
         </div>
