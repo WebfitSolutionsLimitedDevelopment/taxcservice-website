@@ -793,14 +793,29 @@ function Footer() {
 
         <Separator className="my-10 bg-gray-800" />
 
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-gray-500 text-sm">
-            &copy; {new Date().getFullYear()} TaxcService. All rights reserved.
-          </p>
-          <p className="text-gray-500 text-sm">
-            Auckland, New Zealand | taxcservice.com
-          </p>
-        </div>
+        <div className="mt-6">
+  <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+    <p className="text-gray-500 text-sm">
+      &copy; {new Date().getFullYear()} TaxcService. All rights reserved.
+    </p>
+
+    <p className="text-gray-500 text-sm">
+      Auckland, New Zealand | taxcservice.com
+    </p>
+  </div>
+
+  <p className="text-center text-xs text-gray-500 mt-4">
+    Powered by{" "}
+    <a
+      href="https://webfitt.co.nz"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:underline text-gray-400"
+    >
+      Webfit Solutions Limited
+    </a>
+  </p>
+</div>
       </div>
     </footer>
   );
